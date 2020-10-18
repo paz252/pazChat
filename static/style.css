@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url('./white-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.nav{
+    width: 100vw;
+    height: 60px;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.5);
+    margin-top: 0;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logobox{
+    display: flex;
+    margin-left: 15px;
+}
+
+.logo{
+    width: 55px;
+    height: 55px;
+    align-self: center;
+}
+
+#heading{
+    font-size: 35px;
+    align-self: center;
+    color: whitesmoke;
+}
+
+.bg{
+    width: 50px;
+    height: 25px;
+    display: flex;
+    border-radius: 34px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.bg-before{
+    background-color: grey;
+}
+
+.bg-after{
+    background-color:#2196F3;
+}
+
+.circle-before{
+    align-self: center;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 5px;
+}
+
+.circle-after{
+    transform: translateX(26px);
+}
+
+.burger{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+    right: 20px;
+    top: 12px;
+    cursor: pointer;
+}
+
+.line{
+    width: 18px;
+    height: 2px;
+    background-color: whitesmoke;
+    margin: 2px;
+}
+
+.dropdown{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 60px;
+    background-color: grey;
+    right: 0;
+    top: 60px;
+}
+
+.no-show{
+    display: none;
+}
+
+.box{
+    width: 220px;
+    height: 35px;
+    display: flex;
+    background-color: #444857;
+    color: white;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#dm-text{
+    margin-left: 7px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    height: 70vh;
+    margin: auto;
+    margin-top: 15px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 33px;
+    overflow: auto;
+}
+
+.message{
+    max-width: 60vw;
+    padding: 10px;
+    margin: 10px 4px;
+    border-radius: 10px;
+}
+
+.left{
+    align-self: flex-start;
+    background-color: white;
+}
+
+.right{
+    align-self: flex-end;
+    background-color: rgb(0, 174, 239);
+}
+
+.center{
+    align-self: center;
+    background-color: rgb(140, 140, 140);
+}
+
+#send-container{
+    display: flex;
+    margin: auto;
+    margin-top: 5px;
+    width: 75vw;
+}
+
+#messageInp{
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #444857;
+    background-color: transparent;
+    font-weight: bold;    
+}
+
+#sendButton{
+    height: 32px;
+    width: 10%;
+    border-radius: 8px;
+    margin-left: 4px;
+    border: 1px solid #444857;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: #444857;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 500px){
+    #sendButton{
+        width: 20%;
+    }
+
+    #messageInp{
+        width: 100%;
+    }
+
+    #send-container{
+        width: 90vw;
+    }
+
+    .container{
+        width: 75vw;
+    }
+}

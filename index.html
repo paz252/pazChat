@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pazChat - Multiclient Realtime NodeJS Socket.IO App</title>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="static/client.js" defer></script>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="logobox">
+            <img src="./static/icon.png" alt="logo" class="logo">
+            <h1 id="heading">pazChat</h1>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <div dropdown class="dropdown no-show">
+        <div class="box"><span id="dm-text">DARK MODE:</span>
+            <div bg class="bg bg-before">
+                <div circle class="circle-before"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container"></div>
+
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" id="messageInp" name="messageInp" placeholder="Type your message here">
+            <button id="sendButton" type="submit">Send</button>
+        </form>
+    </div>
+</body>
+
+</html>
